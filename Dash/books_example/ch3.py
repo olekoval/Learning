@@ -90,6 +90,7 @@ def plot_countries_by_population(year):
     fig.add_bar(x=year_df['Country Name'],
                 y=year_df[year])
     fig.layout.title = f'Top twenty countries by population - {year}'
+    fig.layout.template = 'plotly_dark'
     return fig
 
 
