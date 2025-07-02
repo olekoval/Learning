@@ -1,33 +1,13 @@
 {% extends "base.html" %}
 {% block title %}Світлана Коваль{% endblock %}
-
 {% block content %}
-<div class="container mt-5">
-  <div class="row">
-    <!-- Колонка 1: Фото та контакти -->
-    <div class="col-md-4 text-center">
-      <img src="{{ url_for('static', filename='face-circle.png') }}" alt="Фото" class="img-fluid rounded-circle mb-3" style="max-width: 200px;">
-      <h1 class="text-primary">Світлана Коваль</h1>
-      <h4 class="text-muted">Бухгалтер</h4>
-      <hr class="my-3">
-      <p class="fs-5"><strong>Телефон:</strong><br>068 435 4436</p>
- <!--     <h5>Про мене</h5>
-      <p>
-        Досвідчений бухгалтер з понад 20 років практики в обліку, звітності та податковому супроводі.
-        Спеціалізуюсь на веденні бухгалтерії для малого та середнього бізнесу.
-      </p>
-      <p>
-        Працюю з BAS, 1С, Медок та іншими системами. Регулярно підвищую кваліфікацію та стежу за змінами у законодавстві.
-      </p> -->
-    </div>
-
-    <!-- Колонка 2: Кнопки + про себе -->
-    <div class="col-md-4 d-flex flex-column justify-content-start">
-      <a href="{{ url_for('skills') }}" class="btn btn-outline-primary mb-3">Переглянути навички</a>
-      <a href="{{ url_for('experience') }}" class="btn btn-outline-primary mb-4">Переглянути досвід</a>      
-    </div>
-    <!-- Колонка 3: Порожня -->
-    <div class="col-md-4"></div>
-  </div>
-</div>
+<div class="container">
+  <img src="{{ url_for('static', filename='image/face-circle_200x200.png') }}" alt="Фото">
+  <h1>Світлана Коваль</h1>
+  <h4>Бухгалтер</h4>
+  <p><strong>м.Київ</strong></p>
+  <p><strong>Телефон:</strong><br>068 435 4436</p>
+  <a href="{{ url_for('skills') }}">Переглянути навички</a>
+  <a href="{{ url_for('experience') }}">Переглянути досвід</a> 
+</div>     
 {% endblock %}
